@@ -17,7 +17,7 @@ Topic topic = ((AQjmsSession) aq.session).getTopic(
             DB_AQ_ADMIN_NAME,     // Queue owner
             "QUEUE_NAME");       // Queue name
 ```
-*Compiling Java program*
+##### Compiling Java program
 
 Export path to include JDK path:
 ```
@@ -36,7 +36,7 @@ Compile Java program
 $ javac -deprecation *.java
 ```
 
-*Executing Java program*
+##### Executing Java program
 
 Enqueue messages
 ```
