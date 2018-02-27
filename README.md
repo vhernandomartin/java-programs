@@ -18,6 +18,7 @@ Topic topic = ((AQjmsSession) aq.session).getTopic(
             "QUEUE_NAME");       // Queue name
 ```
 *Compiling Java program*
+
 Export path to include JDK path:
 ```
 $ export PATH=$PATH:/u01/app/oracle/product/11.2.0/dbhome_1/jdk/bin
@@ -36,6 +37,7 @@ $ javac -deprecation *.java
 ```
 
 *Executing Java program*
+
 Enqueue messages
 ```
 $ java -cp .:/u01/app/oracle/product/11.2.0/dbhome_1/jdbc/lib/ojdbc5.jar:/u01/app/oracle/product/11.2.0/dbhome_1/jlib/aqapi.jar:/u01/app/oracle/product/11.2.0/dbhome_1/jlib/jmscommon.jar:/var/tmp/java_AQJMS:/u01/app/oracle/product/11.2.0/dbhome_1/sqlj/lib/translator.jar:/u01/app/oracle/product/11.2.0/dbhome_1/sqlj/lib/runtime12.jar:/u01/app/oracle/product/11.2.0/dbhome_1/jlib/jta.jar AQJmsPublisher
